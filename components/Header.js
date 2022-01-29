@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <div className="my-6 w-full z-50">
       <div className="flex flex-row items-center justify-between w-full text-neutral-500">
-        <div
+        {/* <div
           className={`w-8 h-8 rounded-full relative overflow-hidden ${
             theme === 'light'
               ? 'text-black'
@@ -19,23 +19,27 @@ export default function Header() {
           }`}
         >
           <Logo />
+        </div> */}
+        <div className="font-mono text-neutral-900 dark:text-neutral-100">
+          swapnil.
         </div>
+
         {theme === 'light' ? (
           <img
             src="/static/icons/moon.svg"
-            width={18}
-            height={18}
+            width={20}
+            height={20}
             alt="Toggle theme"
-            className="cursor-pointer text-neutral-700 opacity-50"
+            className="cursor-pointer text-neutral-700 opacity-70"
             onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
           />
         ) : (
           <img
             src="/static/icons/sun.svg"
-            width={18}
-            height={18}
+            width={20}
+            height={20}
             alt="Toggle theme"
-            className="cursor-pointer opacity-50"
+            className="cursor-pointer opacity-70"
             onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
           />
         )}

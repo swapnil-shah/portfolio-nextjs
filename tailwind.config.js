@@ -14,7 +14,8 @@ module.exports = {
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ['Inter', 'system-ui', 'sans']
+      sans: ['Rubik', 'system-ui', 'sans'],
+      mono: ['Rubik Mono One', 'sans-serif']
     }
   },
   variants: {
